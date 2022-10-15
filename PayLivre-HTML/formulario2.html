@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Trabalhando com Inputs</legend>
+            <!--Input text-->
+            <input 
+                type="text" 
+                placeholder="Preencha o seu nome" 
+                size="60" 
+                minlength="8" 
+                maxlength="20" 
+                title="Você precisa coloocar mais que 8 caracteres e menos do que 20"
+                required
+            >
+            <br>
+            <br>
+            <!--Input number-->
+            <input 
+                type="number" 
+                size="50" 
+                minlength="6" 
+                maxlength="12" 
+                title="Preencha o dado"
+                required
+            >
+
+            <!--Input de e-mail-->
+            <br><br>
+            <input 
+                type="email" 
+                size="24" 
+                title="Preencha o dado"
+                required
+            >
+
+            <!--Input de senha-->
+            <br><br>
+            <input 
+                type="password" 
+                size="24" 
+                minlength="8" 
+                maxlength="16" 
+                title="Preencha o dado"
+                required
+            >
+
+            <br><br>
+            <button type="submit">Enviar</button>
+
+        </fieldset>
+    </form>
+</body>
+</html>
