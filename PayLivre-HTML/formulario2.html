@@ -46,11 +46,31 @@
             <input 
                 type="password" 
                 size="24" 
-                minlength="8" 
-                maxlength="16" 
                 title="Preencha o dado"
-                required
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
             >
+
+            <br><br>
+            <input 
+                type="password" 
+                size="24" 
+                title="Sua senha precisa ser hexadecimal"
+                pattern="[0-9a-fA-F]{4,8}"
+                required
+                inputmode="numeric"
+            >
+
+            <!--Input hidden-->
+            <br><br>
+            <input type="hidden" value="Eu estou escondido =)">
+
+            <!--Input color-->
+            <br><br>
+            <input type="color">
+
+            <!--Input date, week, datetime-local, month, time-->
+            <br><br>
+            <input type="time">
 
             <br><br>
             <button type="submit">Enviar</button>
