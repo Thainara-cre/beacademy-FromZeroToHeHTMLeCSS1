@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 4</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>
+                Trabalhando com Inputs
+            </legend>
+            
+            <!--
+                SELECT
+
+                Elemento de formulário capaz de criar uma lista de opções a serem selecionadas, DropDown
+            -->
+            <label for="teacher">Professores:</label>
+            <select name="select-teacher" id="teacher" multiple size="4">
+                <option value="">Selecione um professor</option>
+                <option value="Luan Santos">Luan Santos</option>
+                <option value="Moacir Garcia">Moacir Garcia</option>
+                <option value="Jenifer Vieria">Jenifer Vieria</option>
+                <option value="Regis Eduardo">Regis Eduardo</option>
+            </select>
+
+            <!--
+                Input Search
+
+                * Elemento usado para pesquisar conteúdo
+                * Parecido com o campo "text" pode receber atributos e comportamentos
+            -->
+
+            <br><br>
+
+            <input type="search" name="" title="Busque por id até 3 digitos" placeholder="Busque o usuário pelo id" size="24" pattern="[0-9] {0,3}" required>
+
+            <br><br>
+            <!--
+                Manipulando arquivos com o file
+
+                * Usuário poderá fazer upload de 1 ou mais arquivos de acordo com a extensão
+            -->
+
+            <input type="file" value="" accept=".doc, .pdf, audio/*, image/*, video/*, .png, .xlsx" multiple>
+
+
+            <br></br>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
